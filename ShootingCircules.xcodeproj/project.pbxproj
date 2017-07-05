@@ -14,6 +14,10 @@
 		241A7F181C3A940400593234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241A7F161C3A940400593234 /* Main.storyboard */; };
 		241A7F1A1C3A940400593234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241A7F191C3A940400593234 /* Assets.xcassets */; };
 		241A7F1D1C3A940400593234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241A7F1B1C3A940400593234 /* LaunchScreen.storyboard */; };
+		24270D871D9598CC0021D973 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24270D851D9598CC0021D973 /* DataModel.xcdatamodeld */; };
+		24C562751D9966EC00E1C7C2 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C562731D9966EC00E1C7C2 /* Person+CoreDataProperties.swift */; };
+		24C562761D9966EC00E1C7C2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C562741D9966EC00E1C7C2 /* Person.swift */; };
+		24C562781D99673000E1C7C2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C562771D99673000E1C7C2 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		241A7F191C3A940400593234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		241A7F1C1C3A940400593234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		241A7F1E1C3A940400593234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24270D861D9598CC0021D973 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		24C562731D9966EC00E1C7C2 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		24C562741D9966EC00E1C7C2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		24C562771D99673000E1C7C2 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,8 @@
 		241A7F021C3A940400593234 = {
 			isa = PBXGroup;
 			children = (
+				24C562731D9966EC00E1C7C2 /* Person+CoreDataProperties.swift */,
+				24C562741D9966EC00E1C7C2 /* Person.swift */,
 				241A7F0D1C3A940400593234 /* ShootingCircules */,
 				241A7F0C1C3A940400593234 /* Products */,
 			);
@@ -66,6 +76,8 @@
 				241A7F191C3A940400593234 /* Assets.xcassets */,
 				241A7F1B1C3A940400593234 /* LaunchScreen.storyboard */,
 				241A7F1E1C3A940400593234 /* Info.plist */,
+				24270D851D9598CC0021D973 /* DataModel.xcdatamodeld */,
+				24C562771D99673000E1C7C2 /* DataController.swift */,
 			);
 			path = ShootingCircules;
 			sourceTree = "<group>";
@@ -102,6 +114,7 @@
 				TargetAttributes = {
 					241A7F0A1C3A940400593234 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 8Q55PY4AZ9;
 					};
 				};
 			};
@@ -142,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C562781D99673000E1C7C2 /* DataController.swift in Sources */,
+				24C562761D9966EC00E1C7C2 /* Person.swift in Sources */,
 				241A7F131C3A940400593234 /* GameScene.swift in Sources */,
+				24C562751D9966EC00E1C7C2 /* Person+CoreDataProperties.swift in Sources */,
+				24270D871D9598CC0021D973 /* DataModel.xcdatamodeld in Sources */,
 				241A7F151C3A940400593234 /* GameViewController.swift in Sources */,
 				241A7F0F1C3A940400593234 /* AppDelegate.swift in Sources */,
 			);
@@ -255,6 +272,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ShootingCircules/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.linne.jespers.ShootingCircules;
@@ -266,6 +285,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ShootingCircules/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = se.linne.jespers.ShootingCircules;
@@ -292,8 +313,22 @@
 				241A7F231C3A940400593234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24270D851D9598CC0021D973 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24270D861D9598CC0021D973 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 24270D861D9598CC0021D973 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 241A7F031C3A940400593234 /* Project object */;
 }
